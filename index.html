@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+	<head>
+		<title>Игра змейка</title>
+		<meta charset="cp1251">
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script type='application/javascript' src='js/fastclick.js'></script>
+		<script src="js/snake.min.js"></script>
+		<link rel="stylesheet" href="css/style.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+	</head>
+	<body>
+		
+		<div class="main">
+			<h1>Змейка</h1>
+			<div class="game">
+				<canvas id="canvas" width="450" height="450"></canvas>
+			</div>
+			<div class="nav">
+				<div class="settings">
+					<p>Выберите скорость</p>
+					<input type="radio" name="speed" class="radio" id="s1" value="120" /><label for="s1">Медленная змея</label><br>
+					<input type="radio" name="speed" class="radio" id="s2" value="80" checked /><label for="s2">Подвижная змея</label><br>
+					<input type="radio" name="speed" class="radio" id="s3" value="40" /><label for="s3">Быстрая змея</label><br>
+				</div>
+				<div class="settings">
+					<input type="checkbox" class="radio" id="field" checked/><label for="field">Бесконечное поле</label><br>
+					<input type="checkbox" class="radio" id="columns" checked/><label for="columns">Препятствия</label>
+				</div>
+				<input type="button" id="start_buttton" value="Старт">
+				<input type="button" id="restart_buttton" value="Начать заново">
+				<input type="button" id="settings_buttton" value="Настройки">
+				<div class="clear"></div>
+				<div class="status"></div>
+				<input type="button" class="clear_status_buttton" value="Сбросить статистику">
+				<div class="control">
+					<div class="botton_control"></div>
+					<div class="botton_control"><input type="button" id="up" value="&#xf062;"></div>
+					<div class="botton_control"></div>
+					<div class="botton_control"><input type="button" id="left" value="&#xf060;"></div>
+					<div class="botton_control"><input type="button" id="down" value="&#xf063;"></div>
+					<div class="botton_control"><input type="button" id="right" value="&#xf061;"></div>
+				</div>
+				<div class="clear"></div>
+				<div class="mob">
+					<div class="status">
+						<p>Длина змейки: </p>
+						<p>Максимальная длина: </p>
+					</div>
+					<input type="button" class="clear_status_buttton" value="Сбросить статистику">
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</body>
+</html>
+   
